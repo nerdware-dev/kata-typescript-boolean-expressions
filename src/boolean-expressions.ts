@@ -11,21 +11,21 @@ interface Product {
 }
 
 export function isUserActive(user: User): boolean {
-  throw new Error('Not implemented');
+  return user?.active ?? false;
 }
 
 export function canUserBuyProduct(user: User, product: Product): boolean {
-  throw new Error('Not implemented');
+  return (user?.active && product?.inStock) ?? false;
 }
 
 export function isUserNameNotEmpty(user: User): boolean {
-  throw new Error('Not implemented');
+  return user?.name?.trim() !== "";
 }
 
 export function isProductNameNotEmpty(product: Product): boolean {
-  throw new Error('Not implemented');
+  return product?.name?.trim() !== "";
 }
 
 export function isProductAvailable(product: Product): boolean {
-  throw new Error('Not implemented');
+  return product?.inStock ?? false;
 }
