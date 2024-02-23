@@ -1,4 +1,4 @@
-import { isUserActive, isProductAvailable, canUserBuyProduct, isUserNameNotEmpty, isProductNameNotEmpty } from './your-module';
+import { isUserActive, isProductAvailable, canUserBuyProduct, isUserNameNotEmpty, isProductNameNotEmpty } from './boolean-expressions';
 
 describe('Boolean expression refactoring', () => {
     it('isUserActive', () => {
